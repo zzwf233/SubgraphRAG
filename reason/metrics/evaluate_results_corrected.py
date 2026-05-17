@@ -277,7 +277,7 @@ def eval_results(predict_file, cal_f1=True, split=None, subset=False, bad_sample
              'total_ans': 0, 'total_g_samples': 0, 'total_b_samples': 0, 'total_samples': 0,
              'total_g_ans': 0, 'total_b_ans': 0,
              'g_c_out_graph': 0, "g_w_out_graph": 0, 'g_c_in_graph': 0, 'g_w_in_graph': 0}
-    with open(predict_file, 'r') as f, open(detailed_eval_file, 'w') as f2:
+    with open(predict_file, 'r', encoding='utf-8') as f, open(detailed_eval_file, 'w', encoding='utf-8') as f2:
         for line in tqdm(f):
             try:
                 data = json.loads(line)

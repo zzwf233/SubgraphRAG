@@ -1,0 +1,3 @@
+method,dataset,predict_file,poison_file
+SubgraphRAG,WebQSP,results/KGQA/webqsp/SubgraphRAG/Llama-3.1-8B-Instruct/scored_100-sys_icl_dc_repro-0.14-thres_0.0-test-safety_ours60_seed0-predictions.jsonl,results/rag_safety_ours/webqsp_test_poison_meta.jsonl
+SubgraphRAG,CWQ,results/KGQA/cwq/SubgraphRAG/Llama-3.1-8B-Instruct/scored_100-sys_icl_dc_repro-0.16-thres_0.0-test-safety_ours60_seed0-predictions.jsonl,results/rag_safety_ours/cwq_test_poison_meta.jsonl
